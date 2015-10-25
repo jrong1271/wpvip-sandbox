@@ -28,4 +28,10 @@ if [ ! -d "_upstream" ]; then
   git clone git@github.com:jrong1271/vip-quickstart.git _upstream/vip-quickstart
 fi
 
+if [ ! -d "_www" ]; then
+  echo 'Linking www/wp-content to _www located in the project folder'
+  mkdir _www
+  ln -s _upstream/vip-quickstart/www/wp-content _www/wp-content
+fi
+
 echo 'Done installing dependencies'
