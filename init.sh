@@ -34,6 +34,7 @@ if [ ! -d "www" ]; then
   cd www
   ln -s ../_upstream/vip-quickstart/www wp
   ln -s ../_upstream/vip-quickstart/www/wp-content/plugins plugins
+  ln -s ../_upstream/vip-quickstart/www/wp-content/themes themes
 fi
 
 echo 'Done installing dependencies'
