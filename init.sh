@@ -33,6 +33,7 @@ if [ ! -d "www" ]; then
   mkdir www
   cd www
   ln -s ../_upstream/vip-quickstart/www wp
+  ln -s ../_upstream/vip-quickstart/www/wp/wp-content/plugins plugins
 fi
 
 echo 'Done installing dependencies'
