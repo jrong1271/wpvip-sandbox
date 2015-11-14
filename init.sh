@@ -25,7 +25,7 @@ fi
 
 if [ ! -d "_upstream" ]; then
   echo "Cloning git@github.com:jrong1271/vip-quickstart.git to _upstream/vip-quickstart"
-  git clone git@github.com:jrong1271/vip-quickstart.git _upstream/vip-quickstart
+  git clone --recursive git@github.com:jrong1271/vip-quickstart.git _upstream/vip-quickstart
 fi
 
 if [ ! -d "www" ]; then
